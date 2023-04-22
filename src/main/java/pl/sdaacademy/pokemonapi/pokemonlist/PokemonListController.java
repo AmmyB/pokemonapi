@@ -2,6 +2,10 @@ package pl.sdaacademy.pokemonapi.pokemonlist;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -17,7 +21,7 @@ class PokemonListController {
     }
 
     @GetMapping
-    List<PokeApiListItemResult> getPokemonItemList() {
+    List<PokemonListItemEntity> getPokemonItemList() {
         return pokemonListService.getPokemonItemList();
     }
 }
